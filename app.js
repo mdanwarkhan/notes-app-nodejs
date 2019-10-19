@@ -1,12 +1,10 @@
 const validator = require('validator')
 const chalk = require('chalk');
-const yargs =require('yargs');
+const yargs = require('yargs');
+const notes = require('./notes.js')
 
-// console.log(process.argv); default
-// console.log(yargs.argv); library
-// yargs.version('1.0.1');
 
-yargs.command({
+yargs.command({     
     command: 'add',
     describe: 'Add a new note',
     builder: {
@@ -22,8 +20,7 @@ yargs.command({
         }
     },
     handler: function (argv) {
-        console.log('Title: ' + argv.title)
-        console.log('Body: ' + argv.body)
+        notes.addNotes(argv.title,argv.body)
     }
 })
 
