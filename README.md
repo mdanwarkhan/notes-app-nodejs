@@ -12,3 +12,7 @@ commands:
 ADD: node app.js add --title='My title' --body='My body'
 
 REMOVE: node app.js remove --title='My title'
+
+LIST: node app.js list
+
+READ: node app.js read --title='My title
