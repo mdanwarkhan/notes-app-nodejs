@@ -1,13 +1,13 @@
 # notes-app-nodejs
 Adding, Deleting, Updating and Listing notes to local JSON file with nodeJs
 
-Installation:
+#  Installation:
 
 cd notes-app-nodejs
 
 npm install
 
-commands:
+# Commands:
 
 ADD: node app.js add --title='My title' --body='My body'
 
